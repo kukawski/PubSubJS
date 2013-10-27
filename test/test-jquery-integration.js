@@ -13,6 +13,8 @@
 		PubSub = global.PubSub || require("../src/pubsub"),
 		TestHelper = global.TestHelper || require("../test/helper");
 
+	PubSub = new PubSub();
+
 	buster.testCase( "jQuery integration", {
 
 		requiresSupportFor: { "jQuery": global.jQuery !== undefined },

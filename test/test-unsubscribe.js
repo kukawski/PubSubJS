@@ -13,6 +13,8 @@
 	var PubSub = global.PubSub || require("../src/pubsub"),
 		TestHelper = global.TestHelper || require("../test/helper");
 
+	PubSub = new PubSub();
+
 	buster.testCase( "unsubscribe method", {
 
 		"should return token when succesful" : function(){

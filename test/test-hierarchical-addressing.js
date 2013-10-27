@@ -12,6 +12,8 @@
 	var PubSub = global.PubSub || require("../src/pubsub"),
 		TestHelper = global.TestHelper || require("../test/helper");
 
+	PubSub = new PubSub();
+
 	buster.testCase( "Hierarchical addressing", {
 
 		setUp : function(){

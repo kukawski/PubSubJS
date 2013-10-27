@@ -12,6 +12,8 @@
 
 	var PubSub = global.PubSub || require("../src/pubsub");
 
+	PubSub = new PubSub();
+
 	/**
 	 *	This is a test proving that bug 9 has been fixed.
 	 *	See https://github.com/mroderick/PubSubJS/issues/9

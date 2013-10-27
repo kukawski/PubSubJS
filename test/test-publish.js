@@ -13,6 +13,8 @@
 	var PubSub = global.PubSub || require("../src/pubsub"),
 		TestHelper = global.TestHelper || require("../test/helper");
 
+	PubSub = new PubSub();
+
 	buster.testCase( "publish method", {
 
 		"publish method should return false if there are no subscribers" : function(){
